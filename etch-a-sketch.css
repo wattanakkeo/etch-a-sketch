@@ -1,0 +1,22 @@
+* {
+  border: 0.1px solid black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.grid-box-row {
+  display: flex;
+  flex-direction: column;
+}
