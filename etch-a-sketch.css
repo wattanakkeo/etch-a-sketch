@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: fantasy;
+  font-size: 16px;
 }
 
 .page {
   display: flex;
-  height: 98vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
@@ -27,3 +29,14 @@
   border: 1px solid black; /* Just for visibility */
 }
 
+.selection-bar {
+  display: flex;
+  flex-direction: column;
+  height: 482px;
+  width: 45px;
+  margin-right: 2px;
+}
+
+.selection-btn {
+  height: 30px;
+}

@@ -31,4 +31,11 @@ reset.addEventListener("click", () => {
 
 gridGenerator();
 
+// 1. Change the grid size function
+
+// 2. Generate 17 buttons for colors to select from
+
+// 3. On mousedown activate mouseover and on mouseup deactivate
+
+// 4. Add an eraser tool
 
