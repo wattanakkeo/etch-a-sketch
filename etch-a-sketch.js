@@ -13,4 +13,9 @@ for (let i = 0; i < 16; i++) {
   }
 }
 
-
+// Alters the box to black when hovered over
+container.addEventListener("mouseover", (event) => {
+  if (event.target.classList.contains("grid-box-column")) {
+    event.target.style.backgroundColor = "black";
+  }
+});
