@@ -3,20 +3,20 @@ function gridGenerator() {
   const container = document.querySelector(".container");
 
   for (let i = 0; i < 16; i++) {
-    const gridBoxRow = document.createElement("div");
-    gridBoxRow.classList.add("grid-box-row");
-    container.appendChild(gridBoxRow);
+    const gridBoxColumn = document.createElement("div");
+    gridBoxColumn.classList.add(".grid-box-column");
+    container.appendChild(gridBoxColumn);
   
     for (let j = 0; j < 16; j++) {
-      const gridBoxColumn = document.createElement("div");
-      gridBoxColumn.classList.add("grid-box-column");
-      gridBoxRow.appendChild(gridBoxColumn);
+      const gridBoxRow = document.createElement("div");
+      gridBoxRow.classList.add("grid-box-row");
+      gridBoxColumn.appendChild(gridBoxRow);
     }
   }
   
   // Alters the box to black when hovered over
   container.addEventListener("mouseover", (event) => {
-    if (event.target.classList.contains("grid-box-column")) {
+    if (event.target.classList.contains("grid-box-row")) {
       event.target.style.backgroundColor = "black";
     }
   });

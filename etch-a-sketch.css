@@ -18,12 +18,12 @@
   display: flex;
 }
 
-.grid-box-row {
+.grid-box-column {
   display: flex;
   flex-direction: column;
 }
 
-.grid-box-column {
+.grid-box-row {
   width: 30px;
   height: 30px;
   border: 1px solid black; /* Just for visibility */
